@@ -33,6 +33,7 @@ In folder `src`:
 - `BlockSizeTable.jl`: Generates the table of block sizes of the optimization problems.
 - `CornerCat456.jl`: Computes the corner certificate for the caterpillar profiles, and makes it rigorous.
 - `DrawProfiles.jl`: Uses the computed bounds to plot the various approximations of tree profiles.
+- `NonConvexity.jl`: Computes a rigorous non convexity certificate.
 - `TreeInducibility.jl`: Computes bounds on the inducibility of trees.
 - `TreeProductTable.jl`: Generates the table for products of small tree flags.
 - `TreeProfiles.jl`: Computes the approximations of the profiles of trees.
