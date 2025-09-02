@@ -1,5 +1,7 @@
 [deps]
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+ClusteredLowRankSolver = "cadeb640-247c-4e6d-a8b8-270aef5e1f95"
+Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
 FlagSOS = "78b365f2-6d95-4275-8db6-8dceb35a712b"
 Hypatia = "b99e6be6-89ff-11e8-14f8-45c827f4f8f2"
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"

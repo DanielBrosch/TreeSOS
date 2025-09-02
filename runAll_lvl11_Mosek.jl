@@ -11,6 +11,7 @@ solver = Mosek.Optimizer
 
 include("src/CornerCat456.jl")
 include("src/TreeInducibility.jl")
+include("src/ExactInducibility.jl")
 include("src/BlockSizeTable.jl")
 include("src/TreeProductTable.jl")
 include("src/TreeProfiles.jl")

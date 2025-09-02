@@ -18,7 +18,7 @@ in a terminal. Note that on first execution relevant Julia packages will be inst
 The code will generate multiple folders with output files:
 
 - `Bounds` contains `JLD2` files with all computed inducibility bounds.
-- `Certificates` will contain the SOS certificates for the bounds on the inducibility graphs, and the corner of the caterpillar profiles. Only the corner certificates are given in a human-readable form, the others are given as compressed [JLD2](https://github.com/JuliaIO/JLD2.jl) files.
+- `Certificates` will contain the SOS certificates for the bounds on the inducibility graphs, and the corner of the caterpillar profiles. Only the corner certificates and the exact certificates are given in a human-readable form, the others are given as compressed [JLD2](https://github.com/JuliaIO/JLD2.jl) files.
 - `GeneratedLatex` contains tables and lists for the paper, which we can generate automatically.
 - `Models` contains computed flag SOS models (including the SDP coefficients), which speeds up further computations and can be used to verify the results.
 - `Pictures` will contain the generated plots in `svg` and `pdf` formats.
@@ -33,6 +33,7 @@ In folder `src`:
 - `BlockSizeTable.jl`: Generates the table of block sizes of the optimization problems.
 - `CornerCat456.jl`: Computes the corner certificate for the caterpillar profiles, and makes it rigorous.
 - `DrawProfiles.jl`: Uses the computed bounds to plot the various approximations of tree profiles.
+- `ExactInducibility.jl`: Computes the exact bounds for recovered and new inducibilities. The certificates are rounded using the `ClusteredLowRankSolver`.
 - `NonConvexity.jl`: Computes a rigorous non convexity certificate.
 - `TreeInducibility.jl`: Computes bounds on the inducibility of trees.
 - `TreeProductTable.jl`: Generates the table for products of small tree flags.

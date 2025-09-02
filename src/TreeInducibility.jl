@@ -25,8 +25,6 @@ for lvl in 4:maxLvl
     inducibilityBounds = Dict()
     inducibilityCertificates = Dict()
 
-    irrationalTree = BinaryTree(BinaryTree(false), BinaryTree(BinaryTree(BinaryTree(false), BinaryTree(false)), BinaryTree(BinaryTree(false), BinaryTree(false))))
-
     @showprogress "Solving SDPs..." for T in trees
         m.objective = -1 * T
         jm = buildJuMPModel(m)
